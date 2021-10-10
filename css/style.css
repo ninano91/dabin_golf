@@ -1,0 +1,112 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;1,100;1,200&display=swap');
+/* font-family: 'Barlow Condensed', sans-serif; */
+/* 얇은 영어 글씨체 */
+
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+header .logo {
+    width: 92px;
+    height: 92px;
+    margin: 0 auto;
+    padding: 10rem 0 0 0;
+
+}
+
+header h1 {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    letter-spacing: 0px;
+}
+
+header p {
+    font-size: 20px;
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .line {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
+
+
+
+/* 이미지 박스 아코디언 방식 */
+
+.img_box {
+    padding-bottom: 10vh;
+    background-color: #000;
+}
+
+.img_box ul.gal {
+    display: flex;
+    height: 88vh;
+}
+
+.img_box ul li {
+    border-right: 5px solid #888;
+    flex: 1;
+    filter: grayscale(1);
+}
+
+.img_box ul li:last-child {
+    border-right: 0;
+}
+
+.img_box ul li:nth-child(1) {
+    background: url(/images/profile_01.png) no-repeat left center;
+}
+
+.img_box ul li:nth-child(2) {
+    background: url(/images/profile_02.png) no-repeat left center;
+}
+
+.img_box ul li:nth-child(3) {
+    background: url(/images/profile_03.png) no-repeat left center;
+}
+
+.img_box ul li:nth-child(4) {
+    background: url(/images/profile_04.png) no-repeat left center;
+}
+
+.img_box ul li:nth-child(5) {
+    background: url(/images/profile_05.png) no-repeat left center;
+}
+
+.img_box ul li:nth-child(6) {
+    background: url(/images/profile_06.png) no-repeat left center;
+}
+
+.img_box ul.gal:hover li {
+    flex: 1;
+    transition: 0.8s;
+}
+
+.img_box ul.gal li:hover {
+    flex: 6.7;
+    filter: none;
+    transition: 0.6s;
+}
